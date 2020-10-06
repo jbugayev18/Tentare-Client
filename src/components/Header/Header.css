@@ -1,8 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Lustria');
-
+@import url("https://fonts.googleapis.com/css?family=Lustria");
 
 h1 {
-    letter-spacing: 2px;
-    font-family: "Lustria";
-    font-weight: 150px;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-family: "Lustria";
+  font-weight: 150px;
+  margin-bottom: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+span {
+  display: grid;
+  place-items: center;
 }
