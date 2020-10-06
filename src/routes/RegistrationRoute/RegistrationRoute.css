@@ -1,6 +1,6 @@
-.App {
+section {
   display: grid;
   grid-template-rows: auto 1fr auto;
   place-items: center;
+  border: 1px solid lightgreen;
 }
-
