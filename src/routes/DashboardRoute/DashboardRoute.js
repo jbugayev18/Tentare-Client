@@ -16,7 +16,7 @@ class DashboardRoute extends Component {
         language: dashboardData.language,
         words: dashboardData.words,
       });
-      console.log(dashboardData)
+      console.log(dashboardData);
     } catch (err) {
       this.setState({
         error: err.message,
@@ -28,7 +28,7 @@ class DashboardRoute extends Component {
     return words.map((word, i) => {
       return (
         <li className="word" key={i}>
-          <p>{word.original}</p>
+          <h4>{word.original}</h4>
           <div className="count">
             <div className="correct"> Correct Count: {word.correct_count} </div>
             <div className="incorrect">
@@ -42,16 +42,22 @@ class DashboardRoute extends Component {
 
   render() {
     const { language, words } = this.state;
-  
+
     return (
       <section>
-        {language.name}
-        {/* {console.log(language)} */}
-        <ul>{this.renderWordList(words)}</ul>
-        <div className="totalScore"> Total Score: {language.total_score}</div>
-        <Link to="/learn">
-          Start
-        </Link>
+        <div className="language">
+          <h2>{language.name}</h2>
+          {/* {console.log(language)} */}
+          <h2 className="Total correct answers">
+            {" "}
+            Total correct answers: {language.total_score}
+          </h2>
+        </div>
+        <ul>
+          <h3>Words to practice</h3>
+          {this.renderWordList(words)}
+        </ul>
+        <Link to="/learn">Start</Link>
       </section>
     );
   }
