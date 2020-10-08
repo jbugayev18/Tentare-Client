@@ -11,7 +11,7 @@ class DashboardRoute extends Component {
 
   async componentDidMount() {
     try {
-      const dashboardData = await LanguageApiService.getLanguage();
+      const dashboardData = await LanguageApiService.getLanguageAndWords();
       this.setState({
         language: dashboardData.language,
         words: dashboardData.words,

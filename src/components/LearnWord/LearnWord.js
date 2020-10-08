@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 class LearnWord extends Component {
   render() {
-    const { word, ts, wordCc, wordIc } = this.props;
+    const { word, ts, wordCc, wordIc, handleGuess } = this.props;
     return (
       <section>
         <main>
           <h2>Translate the word:</h2>
           <span>{word}</span>
-          <form>
+          <form onSubmit={(e) => handleGuess(e)}>
             <label htmlFor="learn-guess-input">
               What's the translation for this word?
             </label>
