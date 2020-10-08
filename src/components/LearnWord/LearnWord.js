@@ -28,4 +28,7 @@ class LearnWord extends Component {
   }
 }
 
+
+
+
 export default LearnWord;

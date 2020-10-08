@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LanguageApiService from "../../services/language-api-service";
 import LearnWord from "../../components/LearnWord/LearnWord";
+import GuessResponse from "../../components/GuessResponse/GuessResponse";
 
 class LearningRoute extends Component {
   state = {
