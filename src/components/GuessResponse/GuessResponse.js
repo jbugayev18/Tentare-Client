@@ -10,17 +10,21 @@ class GuessResponse extends Component {
   }
 
   render() {
-    const { response, guess, handleNextWord} = this.props;
+    const { response, guess, handleNextWord } = this.props;
     const { nextWord, totalScore, isCorrect, answer } = response;
     return (
       <section>
         <main>
-          <div >
-            <p className="DisplayScore">Your total score is: {totalScore}</p>
+          <div className="DisplayScore">
+            <p>Your total score is: {totalScore}</p>
           </div>
+
           <h2>{this.renderResponse(isCorrect)}</h2>
           <div className="DisplayFeedback">
-            <p>The correct translation for {nextWord} was {answer} and you chose {guess}!</p>
+            <p>
+              The correct translation for {nextWord} was {answer} and you chose{" "}
+              {guess}!
+            </p>
           </div>
           <button onClick={() => handleNextWord()}>Try another word!</button>
         </main>

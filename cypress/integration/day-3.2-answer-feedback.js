@@ -87,6 +87,7 @@ describe(`User story: Answer feedback`, function () {
             "have.text",
             `Your total score is: ${incorrectFixture.totalScore}`
           );
+
           cy.get("h2").should("have.text", `Good try, but not quite right :(`);
           cy.get(".DisplayFeedback p").should(
             "have.text",
