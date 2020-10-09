@@ -43,7 +43,7 @@ class Header extends Component {
         <h1>
           <Link to="/">Tentare</Link>
         </h1>
-        <span class="flag-icon flag-icon-it"></span>
+        <span className="flag-icon flag-icon-it"></span>
 
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
