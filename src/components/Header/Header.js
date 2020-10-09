@@ -19,29 +19,36 @@ class Header extends Component {
             Logout
           </Link>
         </nav>
-        <span> 'hello'  {this.context.user.name}</span>
+        <span> 'hello' {this.context.user.name}</span>
       </div>
     );
   }
 
   renderLoginLink() {
     return (
-      <nav>
-        <Link to="/login">Login</Link> <Link to="/register">Sign up</Link>
-      </nav>
+      <div className="nav-link-container">
+        <Link className="nav-link" to="/login">
+          Login
+        </Link>
+        <Link className="nav-link" to="/register">
+          Sign up
+        </Link>
+      </div>
     );
   }
 
   render() {
     return (
-      <header>
+      <nav className="nav-bar">
         <h1>
           <Link to="/">Tentare</Link>
         </h1>
+        <span class="flag-icon flag-icon-it"></span>
+
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
           : this.renderLoginLink()}
-      </header>
+      </nav>
     );
   }
 }

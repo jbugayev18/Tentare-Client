@@ -1,4 +1,4 @@
-label {
+/* label {
   font-weight: bold;
   padding-right: 10px;
   padding-bottom: 10px;
@@ -6,13 +6,75 @@ label {
 
 input {
   margin-bottom: 10px;
-}
+} */
 
-form {
+/* form {
   display: flex;
   flex-direction: column;
   border: 1px solid;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+} */
+
+.form-style-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  font-size: 25px;
+}
+
+.form-style-container-required {
+  display: none;
+}
+
+/* .registration-form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+} */
+
+.registration-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.registration-username {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.registration-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+label {
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.login-username {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.login-password {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 20px;
 }

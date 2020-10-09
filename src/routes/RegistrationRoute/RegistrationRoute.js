@@ -18,7 +18,7 @@ class RegistrationRoute extends Component {
     return (
       <section>
         <h2>Sign up</h2>
-        <p>
+        <p className ="practice"> 
           Practice learning a language with the spaced reptition revision
           technique.
         </p>
