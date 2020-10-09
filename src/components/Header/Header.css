@@ -15,6 +15,40 @@ nav {
 }
 
 span {
-  display: grid;
+  display: flex;
   place-items: center;
+}
+
+.flag-icon {
+  padding: 2px;
+}
+
+header {
+  background-color: lightyellow;
+}
+
+.nav-link {
+  margin: 8px;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: #61b329;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.nav-bar span {
+  width: 150px;
+}
+
+@media all and (max-width: 600px) {
+  .nav-link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

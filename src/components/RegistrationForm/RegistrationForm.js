@@ -40,10 +40,12 @@ class RegistrationForm extends Component {
   render() {
     const { error } = this.state;
     return (
-      <form onSubmit={this.handleSubmit}>
-        <div role="alert">{error && <p>{error}</p>}</div>
-        <div className="registration-form">
-          <div>
+      <div className="form-style-container">
+
+        <form onSubmit={this.handleSubmit}>
+          <div role="alert">{error && <p>{error}</p>}</div>
+
+          <div className="registration-name">
             <Label htmlFor="registration-name-input">
               Enter your name
               <Required />
@@ -55,14 +57,16 @@ class RegistrationForm extends Component {
               required
             />
           </div>
-          <div>
+
+          <div className="registration-username">
             <Label htmlFor="registration-username-input">
               Choose a username
               <Required />
             </Label>
             <Input id="registration-username-input" name="username" required />
           </div>
-          <div>
+
+          <div className="registration-password">
             <Label htmlFor="registration-password-input">
               Choose a password
               <Required />
@@ -74,12 +78,19 @@ class RegistrationForm extends Component {
               required
             />
           </div>
-        </div>
-        <footer>
-          <Button type="submit">Sign up</Button>{" "}
-          <Link to="/login">Already have an account?</Link>
-        </footer>
-      </form>
+
+          <footer>
+
+            <Button type="submit">
+              Sign up
+            </Button>{" "}
+            <br />
+            <Link to="/login">
+              Already have an account?
+            </Link>
+          </footer>
+        </form>
+      </div>
     );
   }
 }
