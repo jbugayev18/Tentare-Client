@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import LanguageApiService from "../../services/language-api-service";
 import { Link } from "react-router-dom";
+import "./DashboardRoute.css";
 
 class DashboardRoute extends Component {
   state = {
@@ -47,16 +48,18 @@ class DashboardRoute extends Component {
       <section>
         <div className="language">
           <h2>{language.name}</h2>
-          {/* {console.log(language)} */}
-          <h2 className="Total correct answers">
+          <h2 className="correct-answers">
             {" "}
             Total correct answers: {language.total_score}
           </h2>
         </div>
-        <ul>
-          <h3>Words to practice</h3>
-          {this.renderWordList(words)}
-        </ul>
+        <div className="word-list-container">
+          <ul className="word-list">
+            <h3>Words to practice</h3>
+            {this.renderWordList(words)}
+          </ul>
+        </div>
+
         <Link to="/learn">Start</Link>
       </section>
     );

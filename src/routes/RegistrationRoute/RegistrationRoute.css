@@ -3,6 +3,7 @@ section {
   grid-template-rows: auto 1fr auto;
   place-items: center;
   background: lightyellow;
+  height: 100%;
 }
 
 .practice {

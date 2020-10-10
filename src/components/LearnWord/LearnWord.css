@@ -1,0 +1,38 @@
+.learn-words {
+  border: 50px solid #61b329;
+  padding-top: 10px;
+}
+
+.translate-word {
+  display: flex;
+  justify-content: center;
+}
+
+.active-word {
+  display: flex;
+  justify-content: center;
+  font-size: 1.4em;
+  font-style: italic;
+  color: indianred;
+}
+
+.answered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 1em;
+  margin-top: 10px;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.correct {
+  display: flex;
+  justify-content: center;
+}
+
+.incorrect {
+  display: flex;
+  justify-content: center;
+}

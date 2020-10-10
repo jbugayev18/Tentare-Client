@@ -1,7 +1,9 @@
+
+
 .App {
   display: grid;
   grid-template-rows: auto 1fr auto;
   place-items: center;
-  background-color: lightyellow;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }

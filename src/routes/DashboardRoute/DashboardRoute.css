@@ -1,5 +1,16 @@
 section {
-  border: 50px solid lightseagreen;
+  border: 50px solid #61b329;
   padding-top: 10px;
   margin-top: 20px;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul.word-list {
+  list-style: none;
 }

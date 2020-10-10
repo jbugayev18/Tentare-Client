@@ -1,7 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  background-color: lightyellow;
 }
 
 body {
