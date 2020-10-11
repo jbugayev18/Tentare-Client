@@ -1,6 +1,7 @@
 .learn-words {
   border: 50px solid #61b329;
   padding-top: 10px;
+  margin: 10px;
 }
 
 .translate-word {
@@ -43,5 +44,7 @@
   place-items: center;
 }
 
-.submit {
+.learn-guess-input {
+  display: flex;
+  margin: 10px;
 }

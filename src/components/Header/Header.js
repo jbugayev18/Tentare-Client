@@ -19,7 +19,7 @@ class Header extends Component {
             Logout
           </Link>
         </nav>
-        <span> 'hello' {this.context.user.name}</span>
+        <span> Ciao!, {this.context.user.name}</span>
       </div>
     );
   }
