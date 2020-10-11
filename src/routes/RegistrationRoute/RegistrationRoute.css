@@ -10,4 +10,14 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-style: italic;
+  font-size: 1.4em;
+  color: indianred;
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

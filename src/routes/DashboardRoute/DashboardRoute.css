@@ -1,7 +1,8 @@
-section {
+section.practice-container {
   border: 50px solid #61b329;
   padding-top: 10px;
   margin-top: 20px;
+  padding: 16px;
 }
 
 .language {
@@ -13,4 +14,18 @@ section {
 
 ul.word-list {
   list-style: none;
+}
+
+.start {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
 }

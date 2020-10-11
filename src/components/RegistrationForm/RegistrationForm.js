@@ -4,6 +4,7 @@ import { Input, Required, Label } from "../Form/Form";
 import AuthApiService from "../../services/auth-api-service";
 import Button from "../Button/Button";
 import "../Form/Form.css";
+import "./RegistrationForm.css";
 
 class RegistrationForm extends Component {
   static defaultProps = {
@@ -41,15 +42,11 @@ class RegistrationForm extends Component {
     const { error } = this.state;
     return (
       <div className="form-style-container">
-
         <form onSubmit={this.handleSubmit}>
           <div role="alert">{error && <p>{error}</p>}</div>
 
           <div className="registration-name">
-            <Label htmlFor="registration-name-input">
-              Enter your name
-              <Required />
-            </Label>
+            <Label htmlFor="registration-name-input">Enter your name</Label>
             <Input
               ref={this.firstInput}
               id="registration-name-input"
@@ -61,7 +58,6 @@ class RegistrationForm extends Component {
           <div className="registration-username">
             <Label htmlFor="registration-username-input">
               Choose a username
-              <Required />
             </Label>
             <Input id="registration-username-input" name="username" required />
           </div>
@@ -69,7 +65,6 @@ class RegistrationForm extends Component {
           <div className="registration-password">
             <Label htmlFor="registration-password-input">
               Choose a password
-              <Required />
             </Label>
             <Input
               id="registration-password-input"
@@ -79,16 +74,13 @@ class RegistrationForm extends Component {
             />
           </div>
 
-          <footer>
-
-            <Button type="submit">
+          <div className="submit-container">
+            <Button type="submit" className="submit">
               Sign up
             </Button>{" "}
             <br />
-            <Link to="/login">
-              Already have an account?
-            </Link>
-          </footer>
+            <Link to="/login">Already have an account?</Link>
+          </div>
         </form>
       </div>
     );

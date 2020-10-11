@@ -45,7 +45,7 @@ class DashboardRoute extends Component {
     const { language, words } = this.state;
 
     return (
-      <section>
+      <section className="practice-container">
         <div className="language">
           <h2>{language.name}</h2>
           <h2 className="correct-answers">
@@ -53,6 +53,7 @@ class DashboardRoute extends Component {
             Total correct answers: {language.total_score}
           </h2>
         </div>
+
         <div className="word-list-container">
           <ul className="word-list">
             <h3>Words to practice</h3>
@@ -60,7 +61,9 @@ class DashboardRoute extends Component {
           </ul>
         </div>
 
-        <Link to="/learn">Start</Link>
+        <Link to="/learn" className="start">
+          Start
+        </Link>
       </section>
     );
   }

@@ -30,6 +30,7 @@ input {
 
 .form-style-container-required {
   display: none;
+  list-style: none;
 }
 
 /* .registration-form-container {

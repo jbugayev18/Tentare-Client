@@ -36,3 +36,12 @@
   display: flex;
   justify-content: center;
 }
+
+.learn-guess-input {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+}
+
+.submit {
+}
