@@ -1,47 +1,46 @@
-# Spaced Repetition Capstone
+# Tentare, Italian for "To Try" -A Spaced Repetition Application to Learn Italian
 
-## Setup
+Ciao! Welcome User! This is a spaced repetition application called "Tentare" that allows a user to learn Italian.
 
-To setup the application
+# Live Link to app can be found:
 
-1. Fork and clone the project to your machine
-2. `npm install`. This will also install the application _Cypress.io_ for running browser integration tests
+# Summary
 
-The project expects you have the Spaced repetition API project setup and running on http://localhost:8000.
+The purpose of this application is for the user to have the ability to learn Italian through the learning technique of spaced repetition. Spaced repetition concept is a learning technique that allows a user to review material at gradually increasing intervals. Once the Italian word presented is translated correctly, the word will be "pushed" back into the "deck" of words and will be encountered less often, whereas a word translated incorrectly will appear sooner so that they user can have more exposure to that specific word.
 
-Find instructions to setup the API here https://github.com/Thinkful-Ed/spaced-repetition-api.
+# Landing Page/Register Page Screenshot
 
-## Running project
+</br>
+<a href="https://imgur.com/8k1GrM5"><img src="https://i.imgur.com/8k1GrM5.png" title="source: imgur.com" />Register</a>
 
-This is a `create-react-app` project so `npm start` will start the project in development mode with hot reloading by default.
+<p>The user is prompted to the sign-up page when the application opens. The user is able to register their creditinals and sign-up to begin learning Italian. If the user already is registered, the user is able to click on "Already have an account", which will direct the user to login.</p>
 
-## Running the tests
+# Login Page
 
-This project uses [Cypress IO](https://docs.cypress.io) for integration testing using the Chrome browser.
+</br>
+<a href="https://imgur.com/3IA8mLW"><img src="https://i.imgur.com/3IA8mLW.png" title="source: imgur.com" />Login</a>
 
-Cypress has the following expectations:
+<p>The user is able to login to the application if the user already registered</p>
 
-- You have cypress installed (this is a devDependency of the project)
-- You have your application running at http://localhost:3000.
-  - You can change the address of this expectation in the `./cypress.json` file.
-- Your `./src/config.js` is using http://localhost:8000/api as the `API_ENDPOINT`
+# Dashboard
 
-To start the tests run the command:
+</br>
+<a href="https://imgur.com/crJzcuh"><img src="https://i.imgur.com/crJzcuh.png" title="source: imgur.com" />Dashboard</a>
 
-```bash
-npm run cypress:open
-```
+<p> The user is able to see a list of all words provided by the application, along with a correct and incorrect count of the words they practiced. The user is able to scroll down to the bottom of the page and click on "Start" to start practicing the words. </p>
 
-On the first run of this command, the cypress application will verify its install. Any other runs after this, the verification will be skipped.
+# Learning Page
 
-The command will open up the Cypress application which reads tests from the `./cypress/integration/` directory. You can then run individual tests by clicking on the file names or run all tests by clicking the "run all tests" button in the cypress GUI.
+</br>
 
-Tests will assert against your running localhost client application.
+<a href="https://imgur.com/PFzcY4w"><img src="https://i.imgur.com/PFzcY4w.png" title="source: imgur.com" />Learning Page</a>
 
-You can also start all of the tests in the command line only (not using the GUI) by running the command:
+<p> The user is able to view the word in its original language and have type the English translation. The user is able to see the amount of correct and incorrect answers they have received, along with the total score. </p>
 
-```bash
-npm run cypress:run
-```
+# Learning Response Page
 
-This will save video recordings of the test runs in the directory `./cypress/videos/`.
+</br>
+
+<a href="https://imgur.com/3SKoM7t"><img src="https://i.imgur.com/3SKoM7t.png" title="source: imgur.com" />Learning Response</a>
+
+<p>The user is able to see if their translation input was correct or incorrect. The user received a message that their translation was either correct or not and then encouraged to try another word. </p>
