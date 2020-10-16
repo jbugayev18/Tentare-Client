@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Input, Required, Label } from "../Form/Form";
+import { Input, Label } from "../Form/Form";
 import AuthApiService from "../../services/auth-api-service";
+import UserContext from '../../contexts/UserContext';
 import Button from "../Button/Button";
 import "../Form/Form.css";
 import "./RegistrationForm.css";
 
 class RegistrationForm extends Component {
-  static defaultProps = {
-    onRegistrationSuccess: () => {},
-  };
 
   state = { error: null };
+  static contextType = UserContext
 
   firstInput = React.createRef();
 
@@ -23,11 +22,14 @@ class RegistrationForm extends Component {
       username: username.value,
       password: password.value,
     })
-      .then((user) => {
-        name.value = "";
-        username.value = "";
-        password.value = "";
-        this.props.onRegistrationSuccess();
+      .then(() => {
+        AuthApiService.postLogin({
+        username: username.value,
+        password: password.value,
+      })
+        .then((res) => {
+          this.context.processLogin(res.authToken);
+        })
       })
       .catch((res) => {
         this.setState({ error: res.error });

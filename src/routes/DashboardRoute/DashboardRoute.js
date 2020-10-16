@@ -17,7 +17,6 @@ class DashboardRoute extends Component {
         language: dashboardData.language,
         words: dashboardData.words,
       });
-      console.log(dashboardData);
     } catch (err) {
       this.setState({
         error: err.message,

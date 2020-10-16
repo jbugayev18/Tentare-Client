@@ -4,14 +4,10 @@ import "./RegistrationRoute.css";
 
 class RegistrationRoute extends Component {
   static defaultProps = {
+    location: {},
     history: {
       push: () => {},
     },
-  };
-
-  handleRegistrationSuccess = () => {
-    const { history } = this.props;
-    history.push("/login");
   };
 
   render() {
@@ -22,9 +18,7 @@ class RegistrationRoute extends Component {
           Practice learning a language with the spaced reptition revision
           technique.
         </p>
-        <RegistrationForm
-          onRegistrationSuccess={this.handleRegistrationSuccess}
-        />
+        <RegistrationForm/>
       </section>
     );
   }
