@@ -2,7 +2,7 @@
 
 Ciao! Welcome User! This is a spaced repetition application called "Tentare" that allows a user to learn Italian.
 
-# Live Link to app can be found: https://tentare-client.vercel.app/register
+# [Tentare - Now LIVE on Vercel](https://tentare.vercel.app)
 
 # Summary
 
